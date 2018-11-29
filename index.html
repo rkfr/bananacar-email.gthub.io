@@ -53,43 +53,68 @@
 		}
 
 		.card--first {
-			background: url(img/logo1.png) center center no-repeat;
+			background: url(img/logo1.png) 100% 0% no-repeat;
 			background-size: auto;
 		}
 
-		.card--first__text--title {
+		.card--first-last__title__padding,
+		.card--first-last__sub-title__padding,
+		.card--first-last__cite__padding {
+			padding: 0 28px 0 259px;
+		}
+
+		.card--second__title__padding,
+		.card--second__sub-title__padding,
+		.card--second__cite__padding
+		{
+			padding: 0 260px 0 35px;
+		}
+
+		.card__text--title {
 			font-family: 'Open Sans', sans-serif;
 			color: #424242;
 			font-size: 20px;
 			font-weight: 900;
-			padding-left: 259px;
 		}
 
-		.card--first__text--sub-title {
+		.card__text--sub-title {
 			font-family: 'Open Sans', sans-serif;
 			color: #7f7f7f;
 			font-size: 16px;
 			font-weight: 500;
-			padding-left: 259px;
 		}
 
-		.card--first__text--cite {
+		.card__text--cite {
 			font-family: 'Open Sans', sans-serif;
 			color: #424242;
 			font-size: 16px;
 			font-weight: 500;
-			padding-left: 259px;
 		}
 
-		@media screen and (max-width: 560px) {
-			.card--first {
+		.card--second {
+			background: url(img/logo2.png) 100% 0% no-repeat;
+			/*background-size: ;*/
+		}
+
+		.card--third {
+			background: url(img/logo3.png) 100% 0% no-repeat;
+			/*background-size: auto;*/
+		}
+
+		@media screen and (max-width: 600px) {
+			.card--first,
+			.card--second,
+			.card--third {
 				background: #fff;
 			}
 
-			.card--first__text--title,
-			.card--first__text--sub-title,
-			.card--first__text--cite {
-				padding: 0;
+			.card--first-last__title__padding,
+			.card--first-last__sub-title__padding,
+			.card--first-last__cite__padding,
+			.card--second__title__padding,
+			.card--second__sub-title__padding,
+			.card--second__cite__padding {
+				padding: 0 10px;
 			}
 		}
 
@@ -169,6 +194,10 @@
 								</td>
 							</tr>
 							<tr>
+								<td height="30px"></td>
+							</tr>
+							<!-- sector 1 -->
+							<tr>
 								<td>
 									<table border="0" cellpadding="0" cellspacing="0" width="100%" class="card--first">
 										<tbody>
@@ -176,11 +205,12 @@
 												<td height="20px"></td>
 											</tr>
 											<tr>
-												<td class="card--first__text--title">
+												<td class="card__text--title card--first-last__title__padding">
 													Karklė Live Music Beach2017 
 												</td>
 											</tr>
-												<td class="card--first__text--sub-title">
+											<tr>
+												<td class="card__text--sub-title card--first-last__sub-title__padding">
 													(Rugpjūčio 18-20)
 												</td>
 											</tr>
@@ -188,7 +218,7 @@
 												<td height="20px"></td>
 											</tr>
 											<tr>
-												<td class="card--first__text--cite">
+												<td class="card__text--cite card--first-last__cite__padding">
 													Vienintelis festivalis Lietuvoje
 													vykstantis ant jūros kranto. Trys dienas ir dvi naktis kruopščiai atrinkti atlikėjai tiek iš Lietuvos tiek iš užsienio linksmins gausų būrį festivalio
 													dalyvius. IšskCirtinės pramogos – menai,
@@ -196,12 +226,87 @@
 												</td>
 											</tr>
 											<tr>
-												<td height="20px"></td>
+												<td height="40px"></td>
 											</tr>
 										</tbody>
 									</table>
 								</td>
 							</tr>
+							<!--end sector 1 -->
+							<!-- start sector 2 -->
+							<tr>
+								<td>
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" class="card--second">
+										<tbody>
+											<tr>
+												<td height="20px"></td>
+											</tr>
+											<tr>
+												<td class="card__text--title card--second__title__padding">
+													Visagino country festival 
+												</td>
+											</tr>
+											<tr>
+												<td class="card__text--sub-title card--second__sub-title__padding">
+													(Rugpjūčio 18-19)
+												</td>
+											</tr>
+											<tr>
+												<td height="20px"></td>
+											</tr>
+											<tr>
+												<td class="card__text--cite card--second__cite__padding">
+													Kantri muzikos gerbėjams skirtas
+													festivalis. Dvi dienas ir naktis
+													mėgausitės atomine muzika,
+													draugiška atmosfera, įvairiomis
+													atrakcijomis, nuostabia gamta ir ežero gaiva, čia būtinai susitiksite seniai matytą bičiulį kaip sako „kantri tėvas“ Virgis Stakėnas.
+												</td>
+											</tr>
+											<tr>
+												<td height="30px"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<!-- end sector 2 -->
+							<!-- start sector 3 -->
+							<tr>
+								<td>
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" class="card--third">
+										<tbody>
+											<tr>
+												<td height="20px"></td>
+											</tr>
+											<tr>
+												<td class="card__text--title card--first-last__title__padding">
+													Purpurinis vakaras
+												</td>
+											</tr>
+											<tr>
+												<td class="card__text--sub-title card--first-last__sub-title__padding">
+													(Rugpjūčio 17-19)
+												</td>
+											</tr>
+											<tr>
+												<td height="20px"></td>
+											</tr>
+											<tr>
+												<td class="card__text--cite card--first-last__cite__padding">
+													Dainuojamosios poezijos mėgėjų
+													festivalis. Festivalyje bus galima išgirsti naujų ir talentingų atlikėjų bei bardų žanro klasikų. Koncerto programa praturtinta spektakliais, parodomis, poezijos skaitymais, susitikimais
+													su meninkais.
+												</td>
+											</tr>
+											<tr>
+												<td height="40px"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<!-- end sector 3 -->
 						</tbody>
 					</table>
 				</td>
