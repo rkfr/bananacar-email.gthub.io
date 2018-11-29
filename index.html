@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Practical test</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- font-family: 'Open Sans', sans-serif; -->
 </head>
@@ -31,7 +32,7 @@
 		}
 
 		.table__header__logo {
-			background: #fff;
+			background: #ffffff;
 			box-shadow: 0 10px 10px rgba(0,0,0,0.1);
 		}
 
@@ -111,7 +112,7 @@
 			font-family: 'Open Sans', sans-serif;
 			font-size: 18px;
 			border-radius: 3px;
-			background: #fff;
+			/*background: #fff;*/
 		}
 
 		.footer__button:hover {
@@ -125,36 +126,53 @@
 		.footer__button-find {
 			background: url(img/find-icon.png) no-repeat 10% center;
 		}
-
+	
 		.text-between-buttons {
 			font-family: 'Open Sans', sans-serif;
 			font-size: 16px;
 			color: #555555;
 		}
-		
+
+		.footer__button-parent {
+			background: #000000;
+			border-radius: 3px;
+		}
+
 		.footer__button-g-play,
 		.footer__button-app-store {
-			max-width: 180px;
-			width: 100%;
-			height: 55px;
-			padding: 0;
-			border: 0;
-			/*background-size: 100%;*/
+			padding: 7px 5px 5px 52px;
+			border: none;
+		}
+
+		.footer__button-g-play:hover,
+		.footer__button-app-store:hover {
+			text-decoration: none;
 		}
 
 		.footer__button-g-play {
-			background: url(img/google-play-logo.png) center center;
+			background:url(img/gp-icon.png) no-repeat 10% center;
+			color: #ffffff;
+		}
+		.footer__button-app-store {
+			background:url(img/apple-icon.png) no-repeat 10% center;
+			color: #ffffff;
 		}
 
-		.footer__button-app-store {
-			background: url(img/app-store-logo.png) center center;
+		.footer__g-play__header {
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+		}
+		.footer__g-play__text {
+			font-family: 'Roboto', sans-serif;
+			font-size: 23px;
+			font-weight: 500;
 		}
 
 		@media only screen and (max-width: 600px) {
 			.card--first,
 			.card--second,
 			.card--third {
-				background: #fff;
+				background: #ffffff;
 			}
 
 			.card--first-last__title__padding,
@@ -411,18 +429,18 @@
 															<tr>
 																<td>
 																	<td width="105px"></td>
-																	<td width="180px">
-																		<button class="footer__button footer__button-app-store">
-																		<a href="#" class="footer__button footer__button-g-play" title="google play">
+																	<td width="180px" class="footer__button-parent">
+																		<a href="#" class="footer__button background footer__button-g-play">
+																			<span class="footer__g-play__header">Get it on</span>
+																			<span class="footer__g-play__text">Google Play</span>
 																		</a>
-																		</button>
 																	</td>
 																	<td width="30px"></td>
-																	<td width="180px">
-																		<button class="footer__button footer__button-app-store">
-																		<a href="#" class="footer__button footer__button-app-store" title="app store">
+																	<td width="180px" class="footer__button-parent">
+																		<a href="#" class="footer__button footer__button-app-store">
+																			<span class="footer__g-play__header">Download on the</span>
+																			<span class="footer__g-play__text">App Store</span>
 																		</a>
-																		</button>
 																	</td>
 																	<td width="105px"></td>
 																</td>
