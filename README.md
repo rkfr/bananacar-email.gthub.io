@@ -1,3 +1,3 @@
 # Test task
 
-[link](https://rkfr.github.io/email-layout-test-task.io/)
+[link](https://rkfr.github.io/bananacar-email.gthub.io/)
